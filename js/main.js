@@ -12,11 +12,11 @@ logBtn.addEventListener('click', function () {
         document.querySelector('.myMassage').innerHTML = ` All Inputs Is Required `
     }
 
-    else{
+    else {
 
         for (i = 0; i < savedData.length; i++) {
-    
-    
+
+
             if (savedData[i].email == logInEmail.value && savedData[i].password == logInpassword.value) {
                 window.open("./!!!!!!welcom !!!!!!!!!/index.html", '_self')
                 localStorage.setItem('userName', savedData[i].name)
@@ -24,11 +24,16 @@ logBtn.addEventListener('click', function () {
             }
 
             else {
-    
-                document.querySelector('.myMassage').innerHTML = ` The email address or password you entered is incorrect. Make sure have an account.<br>if you Dont have account? <a class="text-white " ./!!!!!sin up !!!!!!!!!!/index.html">sing up</a> `
-    
+
+                document.querySelector('.myMassage').innerHTML = ` The email address or password you entered is incorrect. Make sure have an account.<br> <span class="text-white">if You Dont have account</span> ? <a class="text-white " href="./!!!!!sin up !!!!!!!!!!/index.html">sing up</a> `
+                var myInner = document.querySelector('.myinner')
+                myInner.classList.add('d-none')
+
+
+
+
             }
-    
+
         }
 
     }
