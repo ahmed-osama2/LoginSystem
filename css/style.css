@@ -1,0 +1,11 @@
+body{
+    background-color: #24353F;
+}
+
+h1{
+    color: #17A2B8;
+}
+
+::placeholder{
+    color: grey !important ;
+}
